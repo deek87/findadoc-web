@@ -1,0 +1,239 @@
+{
+  "version": "2.1.0",
+  "$schema": "http://json.schemastore.org/sarif-2.1.0-rtm.5",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "ESLint",
+          "informationUri": "https://eslint.org",
+          "rules": [
+            {
+              "id": "vue/multi-word-component-names",
+              "helpUri": "https://eslint.vuejs.org/rules/multi-word-component-names.html",
+              "properties": {},
+              "shortDescription": {
+                "text": "require component names to be always multi-word"
+              }
+            },
+            {
+              "id": "no-undef",
+              "helpUri": "https://eslint.org/docs/rules/no-undef",
+              "properties": {},
+              "shortDescription": {
+                "text": "Disallow the use of undeclared variables unless mentioned in `/*global */` comments"
+              }
+            }
+          ],
+          "version": "8.25.0"
+        }
+      },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///Users/derek/Documents/projects/findadoc-web/.eslintrc.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///Users/derek/Documents/projects/findadoc-web/components/FeaturedNews.vue"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///Users/derek/Documents/projects/findadoc-web/components/LocaleSelector.vue"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///Users/derek/Documents/projects/findadoc-web/components/Media.vue"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///Users/derek/Documents/projects/findadoc-web/components/TopNav.vue"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///Users/derek/Documents/projects/findadoc-web/components/Welcome.vue"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///Users/derek/Documents/projects/findadoc-web/cypress.config.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///Users/derek/Documents/projects/findadoc-web/cypress/support/e2e.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///Users/derek/Documents/projects/findadoc-web/jest.config.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///Users/derek/Documents/projects/findadoc-web/nuxt.config.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///Users/derek/Documents/projects/findadoc-web/pages/about.vue"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///Users/derek/Documents/projects/findadoc-web/pages/adminDashboardPage.vue"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///Users/derek/Documents/projects/findadoc-web/pages/index.vue"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///Users/derek/Documents/projects/findadoc-web/pages/loginPage.vue"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///Users/derek/Documents/projects/findadoc-web/plugins/vue-gtag.client.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///Users/derek/Documents/projects/findadoc-web/stores/navigationStore.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///Users/derek/Documents/projects/findadoc-web/tailwind.config.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///Users/derek/Documents/projects/findadoc-web/test/NuxtLogo.spec.js"
+          }
+        }
+      ],
+      "results": [
+        {
+          "level": "warning",
+          "message": {
+            "text": "Component name \"Media\" should always be multi-word."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///Users/derek/Documents/projects/findadoc-web/components/Media.vue",
+                  "index": 3
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "vue/multi-word-component-names",
+          "ruleIndex": 0
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Component name \"Welcome\" should always be multi-word."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///Users/derek/Documents/projects/findadoc-web/components/Welcome.vue",
+                  "index": 5
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "vue/multi-word-component-names",
+          "ruleIndex": 0
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Component name \"about\" should always be multi-word."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///Users/derek/Documents/projects/findadoc-web/pages/about.vue",
+                  "index": 10
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "vue/multi-word-component-names",
+          "ruleIndex": 0
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Component name \"index\" should always be multi-word."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///Users/derek/Documents/projects/findadoc-web/pages/index.vue",
+                  "index": 12
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "vue/multi-word-component-names",
+          "ruleIndex": 0
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'defineNuxtPlugin' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///Users/derek/Documents/projects/findadoc-web/plugins/vue-gtag.client.js",
+                  "index": 14
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 16,
+                  "endLine": 3,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 1
+        }
+      ]
+    }
+  ]
+}
