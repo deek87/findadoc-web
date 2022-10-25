@@ -62,7 +62,7 @@ jobs:
       LINT_RESULTS: ${{ toJson(needs) }}
     steps:
       - name: Clear Cache
-        uses: octokit/request-action@v2
+        uses: octokit/request-action@v2.x
         with:
           route: DELETE /repos/{repository}/actions/caches?key={cache_key}
           repository: ${{ github.repository }}
