@@ -42,7 +42,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "yarn"
       - name: Install Dependencies
-        run: yarn --frozen-lockfile
+        run: yarn install --immutable
         # this is needed to generate things like tsconfig declerations
       - name: Prepare Nuxt
         run: yarn setup:ci
